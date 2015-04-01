@@ -185,7 +185,7 @@ if (!function_exists('form_input')) {
      */
     function form_input($data = '', $value = '', $extra = '') {
         $defaults = array(
-            'type' => 'text',
+            'type' => is_array($data)&&isset($data['type'])?$data['type']:'text',
             'name' => is_array($data) ? '' : $data,
             'value' => $value
         );

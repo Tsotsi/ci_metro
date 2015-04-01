@@ -42,4 +42,14 @@ $table=$this->table->generate($data);
 $this->load->helper('form');
 		$this->load->view('welcome_message',array('v'=>$v,'table'=>$table));
 	}
+        public function login()
+        {
+            
+            $this->load->language('common');
+            $this->load->language('login');
+            $this->seo_set('title', $this->lang->line('login_title'));
+            $this->load->helper('form');
+            $this->load->helper('language');
+            $this->load->view('login');
+        }
 }
