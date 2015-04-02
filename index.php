@@ -281,6 +281,7 @@ switch (ENVIRONMENT)
 	}
 
 	define('VIEWPATH', $view_folder);
+        define('ASSETDIR','./asset/');
         
 /*
  * --------------------------------------------------------------------
