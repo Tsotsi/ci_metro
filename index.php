@@ -282,7 +282,7 @@ switch (ENVIRONMENT)
 
 	define('VIEWPATH', $view_folder);
         define('ASSETDIR','./asset/');
-    include FCPATH.'thirdparty/vendor/autoload.php';    
+    include APPPATH.'third_party/Sentry/vendor/autoload.php';    
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE
