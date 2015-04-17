@@ -47,6 +47,7 @@ class Welcome extends TT_Controller {
 //var_dump($this->reflectitem->getMethods());
 //$cap=  $this->_getCaptcha();
 		//$this->load->view('welcome_message',array('v'=>$v,'table'=>$table));
+            
 	}
         public function login()
         {
