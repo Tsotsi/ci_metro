@@ -2,7 +2,13 @@
  <?php
 /**
 * @property CI_DB_active_record $db
+* @property CI_DB_query_builder $db
+* @property CI_DB_driver $db
+* @property CI_DB_query_builder $_database
+* @property CI_DB_active_record $_database
+* @property CI_DB_driver $_database
 * @property CI_DB_forge $dbforge
+* @property CI_DB_utility $dbutil
 * @property CI_Benchmark $benchmark
 * @property CI_Calendar $calendar
 * @property CI_Cart $cart
@@ -38,14 +44,21 @@
 * @property CI_Xmlrpc $xmlrpc
 * @property CI_Xmlrpcs $xmlrpcs
 * @property CI_Zip $zip
-* @property Test $test
+* @property Test_model $test
+* @property Captcha $captcha
+* @property ReflectItem $reflectitem
 * @property Msgexpection $msgexpection
 */
-class CI_Controller {};
+class TT_Controller {};
 /**
 * @property CI_DB_active_record $db
-* @property CI_DB_active_record $db
+* @property CI_DB_query_builder $db
+* @property CI_DB_driver $db
+* @property CI_DB_query_builder $_database
+* @property CI_DB_active_record $_database
+* @property CI_DB_driver $_database
 * @property CI_DB_forge $dbforge
+* @property CI_DB_utility $dbutil
 * @property CI_Benchmark $benchmark
 * @property CI_Calendar $calendar
 * @property CI_Cart $cart
@@ -81,8 +94,10 @@ class CI_Controller {};
 * @property CI_Xmlrpc $xmlrpc
 * @property CI_Xmlrpcs $xmlrpcs
 * @property CI_Zip $zip
-* @property Test $test
+* @property Test_model $test
+* @property Captcha $captcha
+* @property ReflectItem $reflectitem
 * @property Msgexpection $msgexpection
 */
-class CI_Model {};
+class TT_Model {};
 ?>
