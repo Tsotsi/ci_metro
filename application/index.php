@@ -296,7 +296,8 @@ switch (ENVIRONMENT)
 	}
 
 	define('VIEWPATH', $view_folder);
-        define('ASSETDIR','../asset/');
+        define('ASSETDIR','./asset/');
+        
         define('COMMONPATH', BASEPATH.'../common'.DIRECTORY_SEPARATOR);
     include COMMONPATH.'third_party/Sentry/vendor/autoload.php';    
 /*

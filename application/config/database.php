@@ -65,11 +65,11 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => '',
+	'username' => 'root',
 	'password' => '',
-	'database' => '',
+	'database' => 'photo',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
+	'dbprefix' => 'p_',
 	'pconnect' => FALSE,
 	'db_debug' => TRUE,
 	'cache_on' => FALSE,
@@ -84,13 +84,13 @@ $db['default'] = array(
 	'save_queries' => TRUE
 );
 $db['rbac'] = array(
-	'dsn'	=> 'mysql:host=localhost;dbname=ci;charset=utf8;',
+	'dsn'	=> 'mysql:host=localhost;dbname=photo;charset=utf8;',
 	'hostname' => 'localhost',
-	'username' => '',
+	'username' => 'root',
 	'password' => '',
 	'database' => '',
 	'dbdriver' => 'pdo',
-	'dbprefix' => '',
+	'dbprefix' => 'p_',
 	'pconnect' => TRUE,
 	'db_debug' => TRUE,
 	'cache_on' => FALSE,

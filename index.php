@@ -114,6 +114,24 @@ switch (ENVIRONMENT)
  * NO TRAILING SLASH!
  */
 	$application_folder = 'application';
+//        $request_uri=isset($_SERVER['REQUEST_URI'])?$_SERVER['REQUEST_URI']:'';
+//        $self=isset($_SERVER['PHP_SELF'])?$_SERVER['PHP_SELF']:__SELF__;
+//        if($request_uri){
+//            $c=min(array(strlen($self),strlen($request_uri)));
+//            for($i=0;$i<$c;$i++){
+//             if(substr($request_uri, $i, 1)!=substr($self, $i,1)){   
+//                 $tmp=substr($request_uri,$i);
+//                 if($tmp&&  is_dir($tmp)){
+//                     $application_folder=$tmp;
+//                 }
+//                break;
+//            }
+//            }
+//        }
+//     echo $request_uri,'<hr/>';
+//     echo $_SERVER['PHP_SELF'],'<hr/>';
+//     echo $_SERVER['PATH_INFO'],'<hr/>';
+//     echo $application_folder;exit;
 
 /*
  *---------------------------------------------------------------
@@ -282,7 +300,8 @@ switch (ENVIRONMENT)
 
 	define('VIEWPATH', $view_folder);
         define('ASSETDIR','./asset/');
-    include APPPATH.'third_party/Sentry/vendor/autoload.php';    
+        define('COMMONPATH', BASEPATH.'../common'.DIRECTORY_SEPARATOR);
+    include COMMONPATH.'Sentry/vendor/autoload.php';    
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE
