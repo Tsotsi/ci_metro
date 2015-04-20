@@ -268,12 +268,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/Translation.git",
-            "reference": "3166541ec7107264270c3e85d4d42f2396a50ce6"
+            "reference": "eb05625d5242718ce695e9b61aca76048203c9b3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Translation/zipball/3166541ec7107264270c3e85d4d42f2396a50ce6",
-            "reference": "3166541ec7107264270c3e85d4d42f2396a50ce6",
+            "url": "https://api.github.com/repos/symfony/Translation/zipball/eb05625d5242718ce695e9b61aca76048203c9b3",
+            "reference": "eb05625d5242718ce695e9b61aca76048203c9b3",
             "shasum": ""
         },
         "require": {
@@ -291,7 +291,7 @@
             "symfony/config": "",
             "symfony/yaml": ""
         },
-        "time": "2015-04-09 12:33:02",
+        "time": "2015-04-19 13:17:37",
         "type": "library",
         "extra": {
             "branch-alias": {

@@ -31,7 +31,7 @@ class TT_Controller extends CI_Controller {
          * asset dir
          * 资源文件目录
          */
-        define('ASSETPATH', rtrim(config_item('base_url'), '/\\') .'/asset/');
+         define('ASSETPATH', rtrim(config_item('base_url'), '/\\') .'/asset/');
         $this->_css_js_files = $this->_my_js_css();
         $this->_init();
     }

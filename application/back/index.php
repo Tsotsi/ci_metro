@@ -98,7 +98,7 @@ switch (ENVIRONMENT)
  * Include the path if the folder is not in the same directory
  * as this file.
  */
-	$system_path = '../system';
+	$system_path = '../../system';
 
 /*
  *---------------------------------------------------------------
@@ -296,8 +296,7 @@ switch (ENVIRONMENT)
 	}
 
 	define('VIEWPATH', $view_folder);
-        define('ASSETDIR','./asset/');
-        
+        define('ASSETDIR','./../asset/');
         define('COMMONPATH', BASEPATH.'../common'.DIRECTORY_SEPARATOR);
     include COMMONPATH.'third_party/Sentry/vendor/autoload.php';    
 /*
