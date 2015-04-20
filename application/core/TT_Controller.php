@@ -23,10 +23,16 @@ class TT_Controller extends CI_Controller {
         'description' => ''
     );
     private $_css_js_files = array();
-
+    protected $_target='';
     public function __construct()
     {
         parent::__construct();
+        /**
+         * 请求的方法
+         */
+//        $tmp=;
+        $this->_initTarget();
+        
         /**
          * asset dir
          * 资源文件目录
@@ -151,5 +157,15 @@ class TT_Controller extends CI_Controller {
     {
         $this->_is_layout = $status;
     }
-
+    private function _initTarget()
+    {
+        $tmp=array(
+            $this->router->class,
+            $this->router->method,
+        );
+        $_target=  implode('.', $tmp);
+        $d=rtrim($this->router->directory,'/\/');
+        $this->_target= $d?$d.'.'.$_target:$_target;
+        
+    }
 }
