@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Allow from all
 Options +FollowSymLinks
 IndexIgnore */*
@@ -5,3 +6,7 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php [L]
+=======
+
+    Deny from all
+>>>>>>> 5a3496ccb6e8178a46f9c8e81af948a31de0a62f
