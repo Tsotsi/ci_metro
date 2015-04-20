@@ -177,6 +177,15 @@ if ( ! function_exists('load_class'))
 				require_once(APPPATH.$directory.'/'.$name.'.php');
 			}
 		}
+		if (file_exists(COMMONPATH.$directory.'/'.config_item('subclass_prefix').$class.'.php'))
+		{
+			$name = config_item('subclass_prefix').$class;
+
+			if (class_exists($name, FALSE) === FALSE)
+			{
+				require_once(COMMONPATH.$directory.'/'.$name.'.php');
+			}
+		}
 
 		// Did we find the class?
 		if ($name === FALSE)
